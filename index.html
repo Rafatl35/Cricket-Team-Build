@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-around items-center bg-slate-400 w-full h-16">
+            <div class="text-[16px] lg:text-2xl font-bold">Budget: <span class="text-white" id="budget">2500</span> S</div>
+            <div class="text-[16px] lg:text-2xl font-bold">Cart: <span class="text-white" id="cart">0</span> S</div>
+            <div class="text-[16px] lg:text-2xl font-bold">Left: <span class="text-white" id="left">6</span> S</div>
+        </div>
+    </header>
+    <main class="bg-cover" style="background-image: url(images/venue.jpg); background-repeat: no-repeat;">
+        <section class="mt-8 p-5 flex flex-col lg:flex-row gap-6">
+            <div class="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-y-6 overflow-y-scroll h-[500px]">
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/Tamim.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Tamim Iqbal</h2>
+                        <p>Price: <span>300</span>S</p>
+                        <p>Category: Bat</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/sakib.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Sakib Al Hasan</h2>
+                        <p>Price: <span>500</span>S</p>
+                        <p>Category: All-Rounder</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/mushfiqur.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mushfiqur Rahim</h2>
+                        <p>Price: <span>200</span>S</p>
+                        <p>Category: Bat</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/mustafizur-rahman.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mustafiz</h2>
+                        <p>Price: <span>400</span>S</p>
+                        <p>Category: Ball</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/liton das.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Liton Das</h2>
+                        <p>Price: <span>300</span>S</p>
+                        <p>Category: Bat</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/shanto.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shanto</h2>
+                        <p>Price: <span>400</span>S</p>
+                        <p>Category: Bat</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/taskin.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Taskin</h2>
+                        <p>Price: <span>400</span>S</p>
+                        <p>Category: Ball</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/soriful.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoriful</h2>
+                        <p>Price: <span>300</span>S</p>
+                        <p>Category: Ball</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 bg-stone-100">
+                    <figure class="px-10 pt-10">
+                        <img class="w-52 h-40" src="images/miraz.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mehedi Miraz</h2>
+                        <p>Price: <span>300</span>S</p>
+                        <p>Category: All-Rounder</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-2/5 flex justify-center items-center bg-gray-300 opacity-90">
+                
+                <div class="w-full p-4 space-y-5">
+                    <h2 class="text-3xl font-bold text-center">My Cart</h2>
+                    <hr class="w-full border-black">
+                    <div class="flex justify-around">
+                        <p class="text-2xl font-semibold">name</p>
+                        <p class="text-2xl font-semibold">Price</p>
+                        <p class="text-2xl font-semibold">Category</p>
+                    </div>
+                    <hr class="w-full border-black">
+                    <h2 class="text-3xl font-bold text-center">Total Cost: <span>0</span>S</h2>
+                    <hr class="w-full border-black">
+                    <div class="flex justify-center items-center gap-3">
+                        <input type="text" placeholder="Coupon Code" class="input input-bordered w-full max-w-xs" />
+                        <button class="btn btn-success">Apply</button>
+                    </div>
+                    <hr class="w-full border-black">
+                    <h2 class="text-3xl font-bold text-center">Grand Total: <span>0</span>S</h2>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
