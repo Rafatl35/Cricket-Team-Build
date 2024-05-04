@@ -27,9 +27,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Tamim Iqbal</h2>
                         <p>Price: <span>300</span>S</p>
-                        <p>Category: Bat</p>
+                        <p>Category: <span>Bat</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -40,9 +40,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Sakib Al Hasan</h2>
                         <p>Price: <span>500</span>S</p>
-                        <p>Category: All-Rounder</p>
+                        <p>Category: <span>All-Rounder</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Mushfiqur Rahim</h2>
                         <p>Price: <span>200</span>S</p>
-                        <p>Category: Bat</p>
+                        <p>Category: <span> Bat</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -66,9 +66,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Mustafiz</h2>
                         <p>Price: <span>400</span>S</p>
-                        <p>Category: Ball</p>
+                        <p>Category: <span>Ball</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -79,9 +79,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Liton Das</h2>
                         <p>Price: <span>300</span>S</p>
-                        <p>Category: Bat</p>
+                        <p>Category: <span>Bat</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -92,9 +92,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Shanto</h2>
                         <p>Price: <span>400</span>S</p>
-                        <p>Category: Bat</p>
+                        <p>Category: <span>Bat</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -105,9 +105,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Taskin</h2>
                         <p>Price: <span>400</span>S</p>
-                        <p>Category: Ball</p>
+                        <p>Category: <span>Ball</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -118,9 +118,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Shoriful</h2>
                         <p>Price: <span>300</span>S</p>
-                        <p>Category: Ball</p>
+                        <p>Category: <span>Ball</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -131,9 +131,9 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Mehedi Miraz</h2>
                         <p>Price: <span>300</span>S</p>
-                        <p>Category: All-Rounder</p>
+                        <p>Category: <span>All-Rounder</span></p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="add-btn btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -143,20 +143,21 @@
                 <div class="w-full p-4 space-y-5">
                     <h2 class="text-3xl font-bold text-center">My Cart</h2>
                     <hr class="w-full border-black">
-                    <div class="flex justify-around">
-                        <p class="text-2xl font-semibold">name</p>
-                        <p class="text-2xl font-semibold">Price</p>
-                        <p class="text-2xl font-semibold">Category</p>
+                    <div class="flex w-full text-center justify-around">
+                        <p class="w-1/3 text-xl font-semibold">name</p>
+                        <p class="w-1/3 text-xl font-semibold">Price</p>
+                        <p class="w-1/3 text-xl font-semibold">Category</p>
                     </div>
+                    <div id="selected-players-container"></div>
                     <hr class="w-full border-black">
-                    <h2 class="text-3xl font-bold text-center">Total Cost: <span>0</span>S</h2>
+                    <h2 class="text-3xl font-bold text-center">Total Cost: <span id="total-cost">0</span>S</h2>
                     <hr class="w-full border-black">
                     <div class="flex justify-center items-center gap-3">
                         <input type="text" placeholder="Coupon Code" class="input input-bordered w-full max-w-xs" />
                         <button class="btn btn-success">Apply</button>
                     </div>
                     <hr class="w-full border-black">
-                    <h2 class="text-3xl font-bold text-center">Grand Total: <span>0</span>S</h2>
+                    <h2 id="grand-total-cost" class="text-3xl font-bold text-center">Grand Total: <span>0</span>S</h2>
                 </div>
                 
             </div>
