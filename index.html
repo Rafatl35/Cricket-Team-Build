@@ -140,7 +140,7 @@
             </div>
             <div class="lg:w-2/5 flex justify-center items-center bg-gray-300 opacity-90">
                 
-                <div class="w-full p-4 space-y-5">
+                <div class="w-full p-4 space-y-3">
                     <h2 class="text-3xl font-bold text-center">My Cart</h2>
                     <hr class="w-full border-black">
                     <div class="flex w-full text-center justify-around">
@@ -148,16 +148,16 @@
                         <p class="w-1/3 text-xl font-semibold">Price</p>
                         <p class="w-1/3 text-xl font-semibold">Category</p>
                     </div>
-                    <div id="selected-players-container"></div>
+                    <div id="selected-players-container" class="overflow-y-scroll h-20"></div>
                     <hr class="w-full border-black">
                     <h2 class="text-3xl font-bold text-center">Total Cost: <span id="total-cost">0</span>S</h2>
                     <hr class="w-full border-black">
                     <div class="flex justify-center items-center gap-3">
-                        <input type="text" placeholder="Coupon Code" class="input input-bordered w-full max-w-xs" />
-                        <button class="btn btn-success">Apply</button>
+                        <input id="coupon-code" type="text" placeholder="Coupon Code" class="input input-bordered w-full max-w-xs" />
+                        <button onclick="updateGrandTotal('apply-btn')"  id="apply-btn" class="btn btn-success">Apply</button>
                     </div>
                     <hr class="w-full border-black">
-                    <h2 id="grand-total-cost" class="text-3xl font-bold text-center">Grand Total: <span>0</span>S</h2>
+                    <h2 class="text-3xl font-bold text-center">Grand Total: <span id="grand-total">0</span>S</h2>
                 </div>
                 
             </div>
