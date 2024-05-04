@@ -7,6 +7,22 @@ for (const btn of allBtn) {
       const category = event.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText;
 
       const selectedContainer = document.getElementById("selected-players-container");
+
+      //update budget
+      const budget = getConvertedValue("budget");
+      document.getElementById("budget").innerText = budget - parseInt(price);
+
+      const cartCount = getConvertedValue("cart");
+      document.getElementById("cart").innerText = cartCount + 1;
+
+      const playerLeft = getConvertedValue("left");
+      document.getElementById("left").innerText = playerLeft - 1;
+
+
+
+
+
+
       const div = document.createElement("div");
       div.classList.add("flex", "text-center", "w-full", "justify-around")
 
@@ -34,12 +50,19 @@ for (const btn of allBtn) {
 }
 
 function updateGrandTotal(status) {
-   if (status) {
-      console.log('true');
+   const totalCost = getConvertedValue("total-cost");
+   if (status == undefined) {
+      document.getElementById("grand-total").innerText = totalCost;
    }
    else {
-      const totalCost = getConvertedValue("total-cost");
-      document.getElementById("grand-total").innerText = totalCost;
+      const couponCode = document.getElementById("coupon-code").value;
+      if(couponCode == "newTeam120"){
+         const discountedPrice = totalCost * .2;
+         document.getElementById("grand-total").innerText= totalCost - discountedPrice;
+      }
+      else{
+         alert("Please enter valid coupon code")
+      }
    }
 }
 
