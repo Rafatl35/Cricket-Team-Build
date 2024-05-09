@@ -7,6 +7,16 @@ for (const btn of allBtn) {
       const category = event.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText;
 
       const selectedContainer = document.getElementById("selected-players-container");
+      event.target.setAttribute("disabled", false);
+
+      const firstCartCount = getConvertedValue("cart");
+      if(firstCartCount+1>6){
+         alert("Sorry..Your team is full, you can only 6 player added in your team");
+         return;
+      }
+
+
+
 
       //update budget
       const budget = getConvertedValue("budget");

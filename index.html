@@ -12,14 +12,19 @@
 <body>
     <header>
         <div class="flex justify-around items-center bg-slate-400 w-full h-16">
-            <div class="text-[16px] lg:text-2xl font-bold">Budget: <span class="text-white" id="budget">2500</span> S</div>
+            <div class="text-[16px] lg:text-2xl font-bold">Budget: <span class="text-white" id="budget">2500</span> S
+            </div>
             <div class="text-[16px] lg:text-2xl font-bold">Cart: <span class="text-white" id="cart">0</span> S</div>
             <div class="text-[16px] lg:text-2xl font-bold">Left: <span class="text-white" id="left">6</span> S</div>
         </div>
     </header>
+    <div class="text-3xl font-bold w-full h-14 text-white flex justify-center items-center bg-red-500">
+        If you enter the coupon code "newTeam120" you will receive a 20% discount on the total cost.
+    </div>
     <main class="bg-cover" style="background-image: url(images/venue.jpg); background-repeat: no-repeat;">
-        <section class="mt-8 p-5 flex flex-col lg:flex-row gap-6">
-            <div class="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-y-6 overflow-y-scroll h-[500px]">
+        <section class=" p-5 flex flex-col lg:flex-row gap-6">
+            <div
+                class="lg:w-3/5 grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-y-6 overflow-y-scroll h-[500px]">
                 <div class="card w-80 bg-stone-100">
                     <figure class="px-10 pt-10">
                         <img class="w-52 h-40" src="images/Tamim.webp" alt="Shoes" class="rounded-xl" />
@@ -139,9 +144,12 @@
                 </div>
             </div>
             <div class="lg:w-2/5 flex justify-center items-center bg-gray-300 opacity-90">
-                
+
                 <div class="w-full p-4 space-y-3">
-                    <h2 class="text-3xl font-bold text-center">My Cart</h2>
+                    <div class="flex justify-between">
+                        <h2 class="text-3xl font-bold text-center">My Selected Player</h2>
+                        <button class="btn bg-red-400 text-xl font-bold " onClick="window.location.href=window.location.href">Reset</button>
+                    </div>
                     <hr class="w-full border-black">
                     <div class="flex w-full text-center justify-around">
                         <p class="w-1/3 text-xl font-semibold">name</p>
@@ -153,13 +161,15 @@
                     <h2 class="text-3xl font-bold text-center">Total Cost: <span id="total-cost">0</span>S</h2>
                     <hr class="w-full border-black">
                     <div class="flex justify-center items-center gap-3">
-                        <input id="coupon-code" type="text" placeholder="Coupon Code" class="input input-bordered w-full max-w-xs" />
-                        <button onclick="updateGrandTotal('apply-btn')"  id="apply-btn" class="btn btn-success">Apply</button>
+                        <input id="coupon-code" type="text" placeholder="Coupon Code"
+                            class="input input-bordered w-full max-w-xs" />
+                        <button onclick="updateGrandTotal('apply-btn')" id="apply-btn"
+                            class="btn btn-success">Apply</button>
                     </div>
                     <hr class="w-full border-black">
                     <h2 class="text-3xl font-bold text-center">Grand Total: <span id="grand-total">0</span>S</h2>
                 </div>
-                
+
             </div>
         </section>
     </main>
